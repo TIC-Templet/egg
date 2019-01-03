@@ -35,5 +35,12 @@ module.exports = appInfo => {
     },
     timezone: '+08:00',
   };
+  // 静态文件存储
+  config.static = {
+    prefix: '/',
+    maxAge: 0,
+    dynamic: true,
+    gzip: true,
+  };
   return config;
 };
